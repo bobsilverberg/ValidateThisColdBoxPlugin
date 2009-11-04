@@ -32,7 +32,7 @@
 		<!--- If no definitionPath was defined, use the ModelsPath and (optionally) the ModelsExternalLocationPath from the ColdBox config --->
 		<cfif NOT StructKeyExists(ValidateThisConfig,"definitionPath")>
 			<cfset ValidateThisConfig.definitionPath = getSetting("ModelsPath") & "/" />
-			<cfif Len(getSetting("ModelsExternalLocationPath"))>
+			<cfif settingExists("ModelsExternalLocationPath") AND Len(getSetting("ModelsExternalLocationPath"))>
 				<cfset ValidateThisConfig.definitionPath = ListAppend(ValidateThisConfig.definitionPath, getSetting("ModelsExternalLocationPath")) />
 			</cfif>
 		</cfif>
