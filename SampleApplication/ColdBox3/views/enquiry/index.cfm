@@ -28,7 +28,7 @@
 		</tr>
 		<tr>
 			<th>Message <cfif StructKeyExists( rc.RequiredFields, "message" )><span class="required">*</span></cfif></th>
-			<td><input type="text" name="phone" id="phone" value="#HtmlEditFormat( rc.Enquiry.getMessage() )#" /> <cfif rc.ValidationResult.hasErrors( "message" )>Error!</cfif></td>
+			<td><input type="text" name="message" id="message" value="#HtmlEditFormat( rc.Enquiry.getMessage() )#" /> <cfif rc.ValidationResult.hasErrors( "message" )>Error!</cfif></td>
 		</tr>
 		<tr>
 			<th>&nbsp;</th>

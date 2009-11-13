@@ -43,7 +43,7 @@
 		if ( SendResult.getIsSuccess() )
 		{
 			flash.put( "message", "Enquiry sent" );
-			setNextEvent( "artist.index" );
+			setNextEvent( "enquiry.index" );
 		}
 		else
 		{
