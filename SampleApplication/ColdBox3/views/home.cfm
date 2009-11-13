@@ -20,7 +20,8 @@
         <td valign="top">
             <h3>Start the demo</h3>
 			<ul>
-				<li><a href="#event.buildLink( 'artist' )#">Simple Form Validation</a></li>
+				<li><a href="#event.buildLink( 'artist' )#">Simple Validation with ORM </a></li>
+				<li><a href="#event.buildLink( 'enquiry' )#">Simple Validation with a Plain Old CFC</a></li>
 			</ul>
         </td>
 		<td valign="top" id="sidebar">
@@ -37,7 +38,7 @@
 	                </li>
 	            </ul>
 	        </li>
-			</ul>
+		</ul>
 		
 		<div style="margin:auto;text-align:center">
 			<img src="http://www.coldboxframework.com/includes/images/logos/poweredby.gif" alt="ColdBox" />

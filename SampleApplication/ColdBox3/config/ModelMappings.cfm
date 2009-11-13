@@ -26,4 +26,6 @@ Description :
 	/* addModelMapping(alias="",path="") */
 		
 	addModelMapping( path="artist.ArtistService" );
+	
+	addModelMapping( path="form.FormService" );
 </cfscript>
