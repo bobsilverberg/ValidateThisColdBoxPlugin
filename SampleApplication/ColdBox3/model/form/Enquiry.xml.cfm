@@ -5,6 +5,7 @@
 			<rule type="required" />
 		</property>
 		<property name="email" desc="Email Address">
+			<rule type="required" />
 			<rule type="email" failureMessage="Hey, dude, you call that an Email Address?" />
 		</property>
 	</objectProperties>

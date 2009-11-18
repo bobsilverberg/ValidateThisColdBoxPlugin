@@ -31,7 +31,7 @@
 	<cffunction name="getEnquiryRequiredFields" returntype="struct" output="false" hint="returns a struct of required properties">
 		<cfscript>
 		/// path from model root
-		return getRequiredFields( 'form/Enquiry' );
+		return getRequiredFields( 'form.Enquiry' );
 		</cfscript>
 	</cffunction>
 	
@@ -51,7 +51,7 @@
 		// populate model from request collection
 		instance.BeanFactory.populateModel( Enquiry );
 		
-		ValidatorResult = instance.ValidateThis.validate( theObject=Enquiry, objectType="form/Enquiry" );
+		ValidatorResult = instance.ValidateThis.validate( theObject=Enquiry, objectType="form.Enquiry" );
 
 		if ( ValidatorResult.getIsSuccess() )
 		{

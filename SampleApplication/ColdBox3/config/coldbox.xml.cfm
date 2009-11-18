@@ -41,14 +41,21 @@
 		<!-- Application Aspects -->
 		<Setting name="HandlerCaching" 				value="false"/>
 		<Setting name="EventCaching" 				value="false"/>
-		<Setting name="MessageboxStyleOverride"		value="false" />
 		<Setting name="ProxyReturnCollection" 		value="false"/>
 		<Setting name="FlashURLPersistScope" 		value="session"/>		
 		
 	</Settings>
 
 	<YourSettings>
-		<Setting name="assetPathJS" value="js"/>
+		<Setting name="assetPathJS" value="assets/js/"/>
+
+		<!-- 
+		define ValidateThis settings:
+		http://www.validatethis.org/docs/wiki/ValidateThisConfig_Struct.cfm 
+		
+		note that ValidateThis will use ColdBox's ModelsPath if you don't specify the definitionPath
+		-->
+		<Setting name="ValidateThisConfig" value="{JSRoot:$(assetPathJS)}"/>
 	</YourSettings>
 	
 	<!--Declare Layouts for your application here-->
