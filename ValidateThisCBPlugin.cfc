@@ -28,7 +28,7 @@
 		<!--- 
 		check for ValidateThis setting defined in Coldbox.xml.cfm 
 		this setting should be in the format:
-			<Setting name="ValidateThisConfig" value="{JSRoot='/js/',defaultFormName='formToValidate'}" />
+			<Setting name="ValidateThisConfig" value="{JSRoot:'/js/',defaultFormName:'formToValidate'}" />
 		--->
 		<cfif settingExists("ValidateThisConfig")>
 			<!--- settings found so use them to configure ValidateThis --->
