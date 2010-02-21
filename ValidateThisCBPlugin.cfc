@@ -36,7 +36,8 @@
 		</cfif>
 		
 		<!--- Create a ValidateThisConfig struct from data in the Coldbox settings --->
-		<cfloop list="VT_TranslatorPath,VT_LocaleLoaderPath,VT_BOValidatorPath,VT_DefaultJSLib,VT_JSRoot,VT_defaultFormName,VT_definitionPath,VT_localeMap,VT_defaultLocale" index="key">
+		<cfloop list="VT_TranslatorPath,VT_LocaleLoaderPath,VT_BOValidatorPath,VT_DefaultJSLib,VT_JSRoot,VT_defaultFormName,VT_definitionPath,VT_localeMap,VT_defaultLocale,VT_abstractGetterMethod,VT_ExtraRuleValidatorComponentPaths" index="key">
+		
 			<cfif settingExists(key)>
 				<cfset setting = Replace(key,"VT_","")>
 				<!--- throw an error if the setting is already defined --->		
